@@ -180,3 +180,35 @@ span{
 div p a{
     text-decoration: no;
 }
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+footer{
+    margin-top: 15px;
+}
+.foot-panel2{
+   background-color: #232f3e; 
+   color: #dddd;
+   height: 300px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+ul{
+    margin-top: 20px;
+}
+.foot-panel3{
+    background-color:#232f3e;
+    color: white;
+}
