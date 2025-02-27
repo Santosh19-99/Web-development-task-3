@@ -18,10 +18,10 @@
 }
 
 .logo{
-    background-image: url(amazon_logo.png);
-    height: 50px;
-    width: 100%;
-    background-size: cover;
+        background-image: url(amazon_logo.png);
+        height: 50px;
+        width: 100%;
+        background-size: cover;
 }
 
 .border{
@@ -152,14 +152,24 @@ span{
 }
 .shop-section{
     display: flex;
+   flex-direction: column;
     justify-content: space-evenly;
     background-color: #e2e7e6;
+}
+h2{
+    margin-left: 20px;
+}
+.item-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
 }
 
 .box {
         height:350px;
         border: 2px solid black;
-        width: 23%;
+        width: 300px;
         background-color: white;
         margin: 20px;
         
@@ -232,6 +242,15 @@ ul{
     align-items: center;
     justify-content: center;
 }
+.box-img{
+    width:200px ;
+    height: 300px;
+}
+.box-img img {
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+}
 
 
 
@@ -248,16 +267,24 @@ ul{
     padding-bottom: 5px;
 }
 
-@media only screen and (max-width: 768px){
-    *{
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-    
-    }
-    .hero{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+.title-section{
+    display: flex;
+    flex-direction: column;
 }
+
+@media  (max-width: 768px){
+
+.item-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.hero, .shop-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+h2{
+  font-size: 20px;
+}
+
+}
+
