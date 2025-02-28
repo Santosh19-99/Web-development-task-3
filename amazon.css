@@ -190,14 +190,14 @@ h2{
 div p a{
     text-decoration: no;
 }
-.foot-panel1{
+button{
     background-color: #37475a;
     color: white;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50px;
+    border-radius: 50%;
     font-size: 0.8rem;
+    border: none;
 }
 footer{
     margin-top: 15px;
@@ -224,7 +224,7 @@ ul{
     border-top: 0.5px solid white;
     height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -284,7 +284,23 @@ ul{
 }
 h2{
   font-size: 20px;
+  margin-top: 10px;
+
 }
 
 }
+@media (max-width: 600px){
+    .logo{
+        display: none;
+    }
+
+}
+
+.backtotop:hover{
+    box-shadow: 1px 1px 10px rgb(244, 101, 101);
+    transform: translate(-10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000;
+}
+
 
